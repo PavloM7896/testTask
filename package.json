@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "gulp test",
+<<<<<<< HEAD
     "start": "node index.js"
   },
   "devDependencies": {
