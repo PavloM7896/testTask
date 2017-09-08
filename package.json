@@ -7,8 +7,6 @@
     "gzippo": "^0.2.0"
   },
   "scripts": {
-    "test": "gulp test",
-<<<<<<< HEAD
     "start": "node index.js"
   },
   "devDependencies": {
