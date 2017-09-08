@@ -1,0 +1,30 @@
+[
+    {
+        "firstName": "Pavlo",
+        "lastName": "M",
+        "age": "21",
+        "skill": "Javascript",
+        "level": 2
+    },
+    {
+        "firstName": "Vitaliy",
+        "lastName": "P",
+        "age": "18",
+        "skill": "C++",
+        "level": 1
+    },
+    {
+        "firstName": "Andriy",
+        "lastName": "V",
+        "age": "38",
+        "skill": "Java",
+        "level": 3
+    },
+    {
+        "firstName": "Roman",
+        "lastName": "S",
+        "age": "27",
+        "skill": ".NET",
+        "level": 2
+    }
+]

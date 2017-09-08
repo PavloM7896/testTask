@@ -1,0 +1,42 @@
+  <div class="row">
+    <div class="col-md-2">
+      <input type="text" id="searchBox" ng-model="search" placeholder="search"/>
+    </div>
+    <div class="pull-right">
+        <button ng-click="addPeople()">New</button>
+      </div>
+    <table class="table col-md-12">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Skill</th>
+        <th>Level</th>
+        <th>Actions</th>
+      </tr>
+      <tr ng-repeat="people in people.peoples | filter:search">
+        <td>
+          <p ng-show="!editing || $index !== ind">{{ people.firstName + " " + people.lastName }}</p>
+          <div ng-show="editing && $index == ind">
+              <input type="text" ng-model="people.firstName" >
+              <input type="text" ng-model="people.lastName">
+          </div>
+        </td>
+        <td>
+            <p ng-show="!editing || $index !== ind">{{ people.age }}</p>
+            <input type="text" ng-model="people.age" ng-show="editing == true && $index == ind">
+        </td>
+        <td>
+            <p ng-show="!editing || $index !== ind"> {{ people.skill }}</p>
+            <input type="text" ng-model="people.skill" ng-show="editing && $index == ind">
+         </td>
+        <td>
+          <jk-rating-stars max-rating="3" rating="people.level" read-only="!editing || $index !== ind"></jk-rating-stars>
+        </td>
+        <td>
+          <button ng-show="!editing || $index !== ind" ng-click="onEdit($index)">Edit</button>
+          <button ng-show="editing && $index == ind" ng-click="edit($index, people)">Confirm</button>
+          <button ng-show="!editing " ng-click="delete($index)">Delete</button>
+        </td>
+      </tr>
+    </table> 
+  </div>

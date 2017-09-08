@@ -1,7 +1,9 @@
 {
   "name": "testTask",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "angular-jk-rating-stars": "^1.0.8"
+  },
   "scripts": {
     "test": "gulp test"
   },
